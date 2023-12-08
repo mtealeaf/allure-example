@@ -26,9 +26,9 @@ jobs:
         cache: 'gradle'
     - uses: allure-framework/setup-allurectl@v1
       with:
-        allure-endpoint: https://demo.testops.cloud
+        allure-endpoint: https://mtealeaf.testops.cloud
         allure-token: ${{ secrets.ALLURE_TOKEN }}
-        allure-project-id: 1064
+        allure-project-id: 1
     - name: Run Tests
       run: allurectl watch -- ./gradlew clean test
       env:
