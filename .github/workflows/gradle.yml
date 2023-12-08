@@ -10,6 +10,15 @@ on:
       ALLURE_USERNAME:
         description: "Inner parameter for Allure TestOps"
         required: false
+      ENDPOINT:
+        description: Endpoint
+        default: mtealeaf.testops.cloud    
+      BROWSER:
+        description: Browser
+        default: Google Chrome
+      OS:
+        description: OS
+        default: macOS
 
 env:
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
